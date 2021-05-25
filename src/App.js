@@ -20,7 +20,7 @@ function App() {
         
       <Grid container>
         <Grid  md="2"></Grid>
-        <Grid xs="12" md="8">
+        <Grid  md="8">
            {
           matches.map((match)=>(
             <Fragment key={match.unique_id}>

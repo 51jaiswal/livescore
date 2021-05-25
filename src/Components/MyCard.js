@@ -14,6 +14,7 @@ import {
 import react, { Component, Fragment, useState } from "react";
 import { getMatchesDetail } from "../Api/Api";
 import vsimage from "../img/vs_image.jpg";
+import "../card.css"
 const MyCard = ({ match }) => {
   const [detail, setDetail] = useState({});
   const [open, setOpen] = useState(false);
@@ -35,17 +36,20 @@ const MyCard = ({ match }) => {
   };
   const getMatchCart = () => {
     return (
-      <Card style={{ margin: "20px" }}>
+        
+
+        
+      <Card  style={{ margin: "20px" }}><div className="card">
         <CardContent>
           <Grid container justify="center" alignItems="center" spacing={4}>
             <Grid item>
-              <Typography variant="h5">{match["team-1"]}</Typography>
+              <Typography color="primary" variant="h5">{match["team-1"]}</Typography>
             </Grid>
             <Grid item>
-              <img style={{ width: "85px", height: "150px" }} src={vsimage} />
+              <img style={{ width: "90px", height: "160px" }} src={vsimage} />
             </Grid>
             <Grid item>
-              <Typography variant="h5">{match["team-2"]}</Typography>
+              <Typography color="primary" variant="h5">{match["team-2"]}</Typography>
             </Grid>
           </Grid>
         </CardContent>
@@ -70,12 +74,12 @@ const MyCard = ({ match }) => {
               Start Time {new Date(match.dateTimeGMT).toLocaleString()}
             </Button>
           </Grid>
-        </CardActions>
+        </CardActions></div>
       </Card>
     );
   };
   const getDialog = () => {
-    return(<Dialog open={open} onClose={handleClose}>
+    return(<Dialog open={open} >
       <DialogTitle id="alert-dialog-title">{"Match Detail.."}</DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-description">

@@ -11,6 +11,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
+import { palette } from '@material-ui/system';
 import react, { Component, Fragment, useState } from "react";
 import { getMatchesDetail } from "../Api/Api";
 import vsimage from "../img/vs_image.jpg";
@@ -35,10 +36,7 @@ const MyCard = ({ match }) => {
     setOpen(true);
   };
   const getMatchCart = () => {
-    return (
-        
-
-        
+    return (    
       <Card  style={{ margin: "20px" }}><div className="card">
         <CardContent>
           <Grid container justify="center" alignItems="center" spacing={4}>
@@ -59,14 +57,14 @@ const MyCard = ({ match }) => {
               onClick={() => {
                 handleClick(match.unique_id);
               }}
-              style={{ margin: "5px" }}
+              style={{ margin: "20px" }}
               variant="contained"
               color="primary"
             >
               Show Detail
             </Button>
             <Button
-              style={{ margin: "5px" }}
+              style={{ margin: "20px" }}
               item
               variant="contained"
               color="primary"

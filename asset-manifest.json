@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/livescore/static/css/main.e62bee39.chunk.css",
+    "main.css": "/livescore/static/css/main.3ebba8b0.chunk.css",
     "main.js": "/livescore/static/js/main.095d2703.chunk.js",
     "main.js.map": "/livescore/static/js/main.095d2703.chunk.js.map",
     "runtime-main.js": "/livescore/static/js/runtime-main.f40128eb.js",
@@ -10,7 +10,7 @@
     "static/js/3.c8833881.chunk.js": "/livescore/static/js/3.c8833881.chunk.js",
     "static/js/3.c8833881.chunk.js.map": "/livescore/static/js/3.c8833881.chunk.js.map",
     "index.html": "/livescore/index.html",
-    "static/css/main.e62bee39.chunk.css.map": "/livescore/static/css/main.e62bee39.chunk.css.map",
+    "static/css/main.3ebba8b0.chunk.css.map": "/livescore/static/css/main.3ebba8b0.chunk.css.map",
     "static/js/2.156c4d99.chunk.js.LICENSE.txt": "/livescore/static/js/2.156c4d99.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/livescore/static/media/logo.6ce24c58.svg",
     "static/media/vs_image.ac11c1a3.jpg": "/livescore/static/media/vs_image.ac11c1a3.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.f40128eb.js",
     "static/js/2.156c4d99.chunk.js",
-    "static/css/main.e62bee39.chunk.css",
+    "static/css/main.3ebba8b0.chunk.css",
     "static/js/main.095d2703.chunk.js"
   ]
 }

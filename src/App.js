@@ -5,7 +5,33 @@ import { Button, Grid, Typography } from '@material-ui/core';
 import Navbar from "./Components/Navbar"
 import MyCard from './Components/MyCard';
 import {getMatches} from "./Api/Api"
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
+import green from '@material-ui/core/colors/green';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: purple[500],
+    },
+    secondary: {
+      main: green[500],
+    },
+  },
+})
+
 function App() {
+
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: '#1b5e20',
+      },
+      secondary: {
+        main:'#1b5e20',
+      },
+    },
+  })
 
   const [matches,setMatches] = useState([]);
   useEffect(() => {
@@ -17,6 +43,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Typography variant="h4" styele={{margin:"20px"}}>Welcome to My live score App</Typography>
+        <ThemeProvider theme={theme}>
+
         
       <Grid container>
         <Grid  md="2"></Grid>
@@ -33,7 +61,7 @@ function App() {
         }
         </Grid>
       </Grid>
-       
+       </ThemeProvider>
         
         {/* <Button variant="contained" color="outlined">Click</Button> */}
     </div>
